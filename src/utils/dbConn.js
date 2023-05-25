@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-const MONGODB_URL = "mongodb+srv://ramchat007:GTIMVIlS5zMCUy8H@cluster0.k3ohobb.mongodb.net/?retryWrites=true&w=majority";
+const MONGODB_URL = process.env.MONGODB_URL;
 
 if (!MONGODB_URL) {
     throw new Error(
